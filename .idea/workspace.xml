@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a0fd54d-b8ec-48db-bd24-196ab60feff9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/article_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classviewshome/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classviewshome/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classviewshome/migrations/0002_book.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classviewshome/migrations/0003_remove_book_article_book_article.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/article_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/article_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/article_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/book_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/book_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/book_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classviewshome/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/classviewshome/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classviewshome/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/classviewshome/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classviewshome/templates/classviewshome/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/classviewshome/templates/classviewshome/article_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classviewshome/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/classviewshome/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classviewshome/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/classviewshome/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,14 +43,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
