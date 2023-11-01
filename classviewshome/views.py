@@ -51,3 +51,13 @@ class BookCreateView(CreateView):
     model = Book
     form_class = BookForm
     success_url = '/books/'
+
+class BookUpdate(UpdateView):
+    model = Book
+    fields = ['title', 'description', 'article']
+    success_url = '/books/'
+
+class BookDelete(DeleteView):
+    model = Book
+    fields = ['title', 'description', 'article']
+    success_url = '/books/'
