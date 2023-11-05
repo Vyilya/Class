@@ -1,5 +1,5 @@
 from django.contrib.auth import login
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import *
@@ -68,7 +68,7 @@ class BookDelete(DeleteView):
 class UserCreateView(CreateView):
     model = CustomUser
     form_class = CustomUserCreationForm
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('user_profile')
     template_name = 'classviewshome/register.html'
 
     def form_valid(self, form):
@@ -78,3 +78,27 @@ class UserCreateView(CreateView):
         user.save()
         login(self.request, user)
         return super().form_valid(form)
+
+
+class ShowProfilePageView(DetailView):
+    model = Profile
+    template_name = 'classviewshome/user_profile.html'
+
+    def get_context_data(self, **kwargs):
+        users = Profile.objects.all()
+        context = super(ShowProfilePageView, self).get_context_data(**kwargs)
+        page_user = get_object_or_404(Profile, id=self.kwargs['pk'])
+        context['page_user'] = page_user
+        return context
+
+class CreateProfilePageView(CreateView):
+    model = Profile
+
+    template_name = 'classviewshome/create_profile.html'
+    fields = ['bio']
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
+
+    success_url = reverse_lazy('user_profile')
