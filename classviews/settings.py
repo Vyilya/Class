@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'classviewshome'
+    'classviewshome',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -87,7 +88,7 @@ DATABASES = {
 
 AUTH_USER_MODEL = 'classviewshome.CustomUser'
 
-LOGIN_REDIRECT_URL = 'user_profile'
+LOGOUT_REDIRECT_URL = 'login'
 
 
 AUTH_PASSWORD_VALIDATORS = [
