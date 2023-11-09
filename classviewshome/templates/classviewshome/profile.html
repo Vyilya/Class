@@ -10,9 +10,13 @@
 
  <h1>Профиль пользователя</h1>
     <p>Добро пожаловать {{ user.username }}</p>
-    <p>Имя {{ user.full_name }} </p>
+    <img src="{{ user.profile_pic }}" height=100 width=100>
+    <p>Имя: {{ user.full_name }} </p>
     <p>Дата рождения: {{ user.birth_date }} </p>
     <p>О себе: {{ user.bio }}</p>
+    <p>Ссылка на VK: {{ user.vk }}</p>
+    <p>Ссылка на телеграм: {{ user.telegram }}</p>
+
 
 
  <a type="button" class="btn btn-outline-dark" href="{% url 'logout' %}">Выход</a>

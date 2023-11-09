@@ -6,6 +6,9 @@ class CustomUser(AbstractUser):
     full_name = models.CharField(max_length=250, verbose_name="ФИО", blank=True, null=True)
     birth_date = models.DateField(verbose_name="Дата рождения", blank=True, null=True)
     bio = models.TextField(null=True, blank=True)
+    profile_pic = models.ImageField(null=True, blank=True, upload_to="images/profile/")
+    vk = models.CharField(max_length=50, null=True, blank=True)
+    telegram = models.CharField(max_length=50, null=True, blank=True)
 
 
 class Article(models.Model):
