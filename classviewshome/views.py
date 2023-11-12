@@ -5,6 +5,7 @@ from .models import *
 from .forms import ArticleForm, BookForm, CustomUserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+
 class HomeView(TemplateView):
     template_name = 'classviewshome/home.html'
 
