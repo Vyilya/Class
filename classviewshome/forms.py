@@ -26,3 +26,7 @@ class CustomUserCreationForm(UserCreationForm):
         fields = ['full_name', 'birth_date', 'username','bio', 'password1', 'password1', 'profile_pic', 'vk', 'telegram']
 
 
+class UserGroupForm(forms.ModelForm):
+    class Meta:
+        model = UserGroup
+        fields = ['group', 'full_name', 'profile_pic', 'city']

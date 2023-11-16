@@ -27,5 +27,8 @@ class Book(models.Model):
     def __str__(self):
         return f"{self.title}, {self.article}"
 
-
-
+class UserGroup(models.Model):
+    group = models.CharField(max_length=250, verbose_name="Группа", blank=True, null=True)
+    full_name = models.CharField(max_length=250, verbose_name="ФИО", blank=True, null=True)
+    profile_pic = models.ImageField(null=True, blank=True, upload_to="images/profile/")
+    city = models.CharField(max_length=250, verbose_name="Город", blank=True, null=True)

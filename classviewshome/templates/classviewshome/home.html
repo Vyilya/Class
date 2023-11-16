@@ -16,23 +16,34 @@
             <h2 class="mb=4">Meet the team</h2>
             <p class="mb-5">Оба примера начинаются с одного и того же сообщения о садящемся солнце. В первом отрывке используются предложения, никак не связанные друг с другом: ни по смыслу, ни грамматически. Каждое предложение несет свою сугубо индивидуальную информацию. Можно сделать вывод, что это разрозненные предложения.</p>
        <div class="row">
+           {% for data in UserGroup %}
            <div class="col-12 col-sm-4 col-lg-4">
-               <img class="mb-2 col-2" src="https://clipartcraft.com/images/playstation-4-logo-circle-1.png" alt="">
-                <h3>Солнце село за горизонт</h3>
-               <p>Два слова</p>
+               <img class="mb-5 col-5"  src="{{ data.profile_pic.url }}">
+                <h3>{{ data.group }}</h3>
+               <p>{{ data.full_name }}</p>
+               <p>{{ data.city }}</p>
            </div>
-           <div class="col-12 col-sm-4 col-lg-4">
-               <img class="mb-2 col-2" src="https://clipartcraft.com/images/playstation-4-logo-circle-1.png" alt="">
-                <h3>В городе снуют автомобили</h3>
-               <p>Тут три слова</p>
-           </div>
-           <div class="col-12 col-sm-4 col-lg-4">
-               <img class="mb-2 col-2" src="https://clipartcraft.com/images/playstation-4-logo-circle-1.png" alt="">
-               <h3>В небе курлычут журавли</h3>
-               <p>Два слова</p>
-           </div>
-       </div>
+           {% endfor %}
+
         </div>
     </div>
     </section>
+ <section>
+    <div class="d-flex justify-content-center align-items-center text-center vh-75">
+        <div class="col-12 col-md-8 col-lg-5 ps-0 ps-md-2 ps-lg-4">
+            <h1 class="mb=5">Ready to join us?</h1>
+            <h4 class="mb-5">Oku is the companion app for your bookshelf.</h4>
+            <p class="mb-5">Become a member for free to track, rate & review your favourite books with a community of others.</p>
+            <a href="{% url 'register' %}" class="w-50 w-md-50 btn btn-dark mb-5">Create a free account</a>
+        </div>
+    </div>
+    </section>
+
+<!--{% for data in UserGroup %}-->
+<!--<p>{{ data.group }}</p>-->
+<!--<p>{{ data.full_name }}</p>-->
+<!--<p>{{ data.profile_pic }}</p>-->
+<!--<p>{{ data.city }}</p>-->
+<!--{% endfor %}-->
+
 {% endblock content %}
