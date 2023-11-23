@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
+{% load static %}
+
     <section class="hero vh-100">
     <div class="container d-flex align-items-center h-75">
         <div class="col-12 col-md-8 col-lg-5 ps-0 ps-md-2 ps-lg-4">
@@ -9,6 +11,19 @@
         </div>
     </div>
     </section>
+
+</section>
+ <section>
+    <div class="c-bg-grey d-flex justify-content-center align-items-center text-center vh-100">
+        <div class="col-12 col-md-10 col-lg-8">
+        <h2 class="mb=5">Unlock your personal statistics</h2>
+            <div class="col-12">
+        <img class="mb-8"  src="{% static '/img/1.png' %}">
+            </div>
+        </div>
+    </div>
+    </section>
+
 
  <section>
     <div class="container d-flex justify-content-center align-items-center text-center vh-100">
@@ -39,11 +54,5 @@
     </div>
     </section>
 
-<!--{% for data in UserGroup %}-->
-<!--<p>{{ data.group }}</p>-->
-<!--<p>{{ data.full_name }}</p>-->
-<!--<p>{{ data.profile_pic }}</p>-->
-<!--<p>{{ data.city }}</p>-->
-<!--{% endfor %}-->
 
 {% endblock content %}
